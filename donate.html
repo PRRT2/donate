@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate — PRRT2 Foundation</title>
+  <meta name="description" content="Support PRRT2 Foundation — building patient resources, research advocacy, and the infrastructure this diagnosis has never had.">
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <script async src="https://widgets.givebutter.com/latest.umd.cjs?acct=IATApnVysOzTBNYW&p=other"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Fira Sans', sans-serif;
+      background: #f8f5f0;
+      color: #1E1B17;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top amber bar */
+    .top-bar { height: 4px; background: #C97A3F; }
+
+    /* Header */
+    header {
+      background: #143A55;
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .wordmark {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      line-height: 1;
+    }
+    .wordmark .prrt { color: #F4ECD8; }
+    .wordmark .two  { color: #C97A3F; }
+
+    .sub {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      color: rgba(244,236,216,0.55);
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 3px;
+      padding-left: 1px;
+    }
+
+    .back-link {
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(244,236,216,0.65);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: #F4ECD8; }
+
+    /* Main */
+    main {
+      flex: 1;
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    h1 {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      color: #143A55;
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .description {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.65;
+      color: #3a3530;
+      margin-bottom: 36px;
+      max-width: 560px;
+    }
+
+    /* Notices */
+    .notice {
+      padding: 14px 18px;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .notice strong { font-weight: 600; }
+
+    .notice-info {
+      background: rgba(20,58,85,0.07);
+      border-left: 3px solid #143A55;
+    }
+
+    .notice-warning {
+      background: rgba(201,122,63,0.09);
+      border-left: 3px solid #C97A3F;
+    }
+
+    /* Divider before widget */
+    .widget-section {
+      margin-top: 36px;
+      padding-top: 36px;
+      border-top: 1px solid rgba(20,58,85,0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #143A55;
+      padding: 22px 32px;
+      text-align: center;
+    }
+    footer p {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: rgba(244,236,216,0.5);
+    }
+    footer a {
+      color: rgba(244,236,216,0.7);
+      text-decoration: none;
+    }
+    footer a:hover { color: #F4ECD8; }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      header { padding: 16px 20px; }
+      .wordmark { font-size: 22px; }
+      main { padding: 36px 20px 48px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar"></div>
+
+<header>
+  <a href="https://prrt2.org" class="wordmark">
+    <span class="prrt">PRRT</span><span class="two">2</span>
+    <span class="sub">Foundation</span>
+  </a>
+  <a href="https://prrt2.org" class="back-link">← Back to prrt2.org</a>
+</header>
+
+<main>
+  <h1>Support Our Work</h1>
+
+  <p class="description">
+    PRRT2 Foundation is building the patient resources, research advocacy, and infrastructure this diagnosis has never had — a dedicated knowledge base, patient registry, and research partnerships for everyone living with a PRRT2 mutation.
+  </p>
+
+  <div class="notice notice-info">
+    <strong>PRRT2 Foundation, Inc.</strong> is a Florida nonprofit corporation. Our 501(c)(3) application is currently pending with the IRS. Donations are not yet tax-deductible.
+  </div>
+
+  <div class="notice notice-warning">
+    <strong>A note on fees:</strong> During checkout, GiveButter will prompt you twice for additional amounts — first for an optional platform tip, and again to cover transaction processing fees. Both go to GiveButter, not to PRRT2 Foundation. You can set both to $0. Your full donation reaches us directly.
+  </div>
+
+  <div class="widget-section">
+    <givebutter-widget id="prrt2"></givebutter-widget>
+  </div>
+</main>
+
+<footer>
+  <p>PRRT2 Foundation, Inc. &nbsp;·&nbsp; North Port, Florida &nbsp;·&nbsp; <a href="https://prrt2.org">prrt2.org</a></p>
+</footer>
+
+</body>
+</html>
