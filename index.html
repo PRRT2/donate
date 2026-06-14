@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donate — PRRT2 Foundation</title>
-  <meta name="description" content="Support PRRT2 Foundation — building patient resources, research advocacy, and the infrastructure this diagnosis has never had.">
+  <meta name="description" content="Help build the patient resources, research advocacy, and infrastructure the PRRT2 community has never had.">
 
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
   <script async src="https://widgets.givebutter.com/latest.umd.cjs?acct=IATApnVysOzTBNYW&p=other"></script>
@@ -14,120 +14,193 @@
 
     body {
       font-family: 'Fira Sans', sans-serif;
-      background: #f8f5f0;
+      background: #ffffff;
       color: #1E1B17;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
-    /* Top amber bar */
     .top-bar { height: 4px; background: #C97A3F; }
 
-    /* Header */
     header {
       background: #143A55;
-      padding: 18px 32px;
+      padding: 18px 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 12px;
     }
-
     .wordmark {
       font-family: 'IBM Plex Mono', monospace;
       font-weight: 700;
-      font-size: 26px;
+      font-size: 24px;
       letter-spacing: 0.04em;
       text-decoration: none;
       line-height: 1;
     }
     .wordmark .prrt { color: #F4ECD8; }
     .wordmark .two  { color: #C97A3F; }
-
-    .sub {
+    .wordmark-sub {
+      display: block;
       font-family: 'Fira Sans', sans-serif;
       font-weight: 300;
-      font-size: 11px;
-      color: rgba(244,236,216,0.55);
-      letter-spacing: 0.4em;
+      font-size: 10px;
+      color: rgba(244,236,216,0.5);
+      letter-spacing: 0.42em;
       text-transform: uppercase;
-      display: block;
       margin-top: 3px;
-      padding-left: 1px;
     }
-
     .back-link {
-      font-family: 'Fira Sans', sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      color: rgba(244,236,216,0.65);
+      font-size: 13px;
+      color: rgba(244,236,216,0.6);
       text-decoration: none;
-      letter-spacing: 0.03em;
-      transition: color 0.15s;
     }
     .back-link:hover { color: #F4ECD8; }
+
+    /* Hero */
+    .hero {
+      background: #143A55;
+      padding: 56px 40px 64px;
+      border-bottom: 4px solid #C97A3F;
+    }
+    .hero-inner { max-width: 680px; margin: 0 auto; }
+
+    .hero h1 {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+      color: #F4ECD8;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+    .hero p {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      color: rgba(244,236,216,0.8);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      max-width: 560px;
+    }
+    .thankyou {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: #C97A3F;
+      letter-spacing: 0.02em;
+    }
 
     /* Main */
     main {
       flex: 1;
-      max-width: 700px;
+      max-width: 720px;
       width: 100%;
       margin: 0 auto;
-      padding: 48px 24px 64px;
+      padding: 52px 40px 72px;
     }
 
-    h1 {
+    /* What you fund */
+    .funding-section { margin-bottom: 52px; }
+    .funding-section h2 {
       font-family: 'Fira Sans', sans-serif;
       font-weight: 600;
-      font-size: 30px;
+      font-size: 20px;
       color: #143A55;
-      margin-bottom: 14px;
+      margin-bottom: 28px;
       letter-spacing: -0.01em;
     }
-
-    .description {
-      font-family: 'Fira Sans', sans-serif;
+    .funding-items { display: flex; flex-direction: column; gap: 22px; }
+    .funding-item {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .funding-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 700;
+      font-size: 22px;
+      color: #C97A3F;
+      line-height: 1;
+      flex-shrink: 0;
+      padding-top: 2px;
+      width: 28px;
+    }
+    .funding-text strong {
+      display: block;
+      font-weight: 600;
+      font-size: 15px;
+      color: #143A55;
+      margin-bottom: 4px;
+    }
+    .funding-text p {
       font-weight: 300;
-      font-size: 16px;
-      line-height: 1.65;
-      color: #3a3530;
-      margin-bottom: 36px;
-      max-width: 560px;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: rgba(20,58,85,0.1);
+      margin: 48px 0;
+    }
+
+    /* Widget section */
+    .widget-section h2 {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #143A55;
+      margin-bottom: 24px;
+    }
+
+    /* Other ways */
+    .other-ways {
+      margin-top: 48px;
+      padding: 24px 28px;
+      background: #f8f5f0;
+      border-radius: 6px;
+      border-left: 3px solid #143A55;
+    }
+    .other-ways h3 {
+      font-weight: 600;
+      font-size: 15px;
+      color: #143A55;
+      margin-bottom: 10px;
+    }
+    .other-ways p {
+      font-weight: 300;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.55;
     }
 
     /* Notices */
+    .notices { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
     .notice {
-      padding: 14px 18px;
+      padding: 13px 16px;
       border-radius: 5px;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.55;
-      margin-bottom: 14px;
     }
     .notice strong { font-weight: 600; }
-
     .notice-info {
-      background: rgba(20,58,85,0.07);
+      background: rgba(20,58,85,0.06);
       border-left: 3px solid #143A55;
     }
-
     .notice-warning {
-      background: rgba(201,122,63,0.09);
+      background: rgba(201,122,63,0.08);
       border-left: 3px solid #C97A3F;
-    }
-
-    /* Divider before widget */
-    .widget-section {
-      margin-top: 36px;
-      padding-top: 36px;
-      border-top: 1px solid rgba(20,58,85,0.1);
     }
 
     /* Footer */
     footer {
       background: #143A55;
-      padding: 22px 32px;
+      padding: 24px 40px;
       text-align: center;
     }
     footer p {
@@ -135,19 +208,21 @@
       font-weight: 300;
       font-size: 13px;
       color: rgba(244,236,216,0.5);
+      line-height: 1.7;
     }
-    footer a {
-      color: rgba(244,236,216,0.7);
-      text-decoration: none;
-    }
+    footer a { color: rgba(244,236,216,0.7); text-decoration: none; }
     footer a:hover { color: #F4ECD8; }
+    footer .ein {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: rgba(244,236,216,0.35);
+    }
 
-    /* Mobile */
     @media (max-width: 600px) {
       header { padding: 16px 20px; }
-      .wordmark { font-size: 22px; }
-      main { padding: 36px 20px 48px; }
-      h1 { font-size: 24px; }
+      .hero { padding: 40px 20px 48px; }
+      .hero h1 { font-size: 28px; }
+      main { padding: 40px 20px 56px; }
     }
   </style>
 </head>
@@ -158,33 +233,75 @@
 <header>
   <a href="https://prrt2.org" class="wordmark">
     <span class="prrt">PRRT</span><span class="two">2</span>
-    <span class="sub">Foundation</span>
+    <span class="wordmark-sub">Foundation</span>
   </a>
   <a href="https://prrt2.org" class="back-link">← Back to prrt2.org</a>
 </header>
 
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Help Build What PRRT2 Patients Have Never Had</h1>
+    <p>Most people living with a PRRT2 mutation spend years — sometimes decades — searching for answers that didn't exist. We're building them. A dedicated knowledge base, a patient registry, and the research partnerships that put PRRT2 on the clinical map.</p>
+    <div class="thankyou">Thank you for helping us close that gap.</div>
+  </div>
+</div>
+
 <main>
-  <h1>Support Our Work</h1>
 
-  <p class="description">
-    PRRT2 Foundation is building the patient resources, research advocacy, and infrastructure this diagnosis has never had — a dedicated knowledge base, patient registry, and research partnerships for everyone living with a PRRT2 mutation.
-  </p>
-
-  <div class="notice notice-info">
-    <strong>PRRT2 Foundation, Inc.</strong> is a Florida nonprofit corporation. Our 501(c)(3) application is currently pending with the IRS. Donations are not yet tax-deductible.
+  <div class="funding-section">
+    <h2>Your donation directly funds:</h2>
+    <div class="funding-items">
+      <div class="funding-item">
+        <div class="funding-num">1</div>
+        <div class="funding-text">
+          <strong>The PRRT2 Knowledge Base</strong>
+          <p>prrt2.org is the only dedicated scientific resource for PRRT2 patients and the clinicians trying to diagnose them. Research, plain language, and real answers in one place.</p>
+        </div>
+      </div>
+      <div class="funding-item">
+        <div class="funding-num">2</div>
+        <div class="funding-text">
+          <strong>A Patient Registry</strong>
+          <p>No registry means no research priority. We're developing the first patient registry for PRRT2 — connecting patients with the researchers who need to find them.</p>
+        </div>
+      </div>
+      <div class="funding-item">
+        <div class="funding-num">3</div>
+        <div class="funding-text">
+          <strong>Research &amp; Clinical Partnerships</strong>
+          <p>Working directly with genetic labs, research institutions, and patient advocacy networks to advance PRRT2 testing, awareness, and clinical understanding.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="notice notice-warning">
-    <strong>A note on fees:</strong> During checkout, GiveButter will prompt you twice for additional amounts — first for an optional platform tip, and again to cover transaction processing fees. Both go to GiveButter, not to PRRT2 Foundation. You can set both to $0. Your full donation reaches us directly.
-  </div>
+  <div class="divider"></div>
 
   <div class="widget-section">
+    <h2>Make a donation</h2>
     <givebutter-widget id="prrt2"></givebutter-widget>
   </div>
+
+  <div class="other-ways">
+    <h3>Other Ways to Give</h3>
+    <p>To donate by check, make it payable to <strong>PRRT2 Foundation, Inc.</strong> and <a href="https://prrt2.org/resources/contact">contact us</a> for our mailing address. For questions about major gifts, stock, or donor-advised funds, reach out directly.</p>
+  </div>
+
+  <div class="notices">
+    <div class="notice notice-info">
+      <strong>PRRT2 Foundation, Inc.</strong> is a Florida nonprofit corporation. Our 501(c)(3) application is currently pending with the IRS. Donations are not currently tax-deductible.
+    </div>
+    <div class="notice notice-warning">
+      <strong>A note on fees:</strong> During checkout, GiveButter will prompt you twice — first for an optional platform tip, then to cover transaction processing fees. Both go to GiveButter, not PRRT2 Foundation. You can set both to $0. Your full donation reaches us directly.
+    </div>
+  </div>
+
 </main>
 
 <footer>
-  <p>PRRT2 Foundation, Inc. &nbsp;·&nbsp; North Port, Florida &nbsp;·&nbsp; <a href="https://prrt2.org">prrt2.org</a></p>
+  <p>PRRT2 Foundation, Inc. &nbsp;·&nbsp; North Port, Florida<br>
+  <a href="https://prrt2.org">prrt2.org</a> &nbsp;·&nbsp; <a href="mailto:contact@prrt2.org">contact@prrt2.org</a></p>
+  <p class="ein" style="margin-top:8px;">EIN: 42-3128330</p>
 </footer>
 
 </body>
